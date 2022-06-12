@@ -1,0 +1,19 @@
+<h3 appHighlight value="red">Professor Menu</h3>
+
+<form ngForm>
+    <button type="submit" class="btn btn-primary" (click)=" getCourseDetails()">View Course Details</button>
+    <button type="submit" class="btn btn-primary" (click)=" getProfessorDetails()">View Student Details</button>
+    <button type="submit" class="btn btn-primary" (click)=" addGrades()">View Course Details</button>
+
+</form>
+
+<div>
+    <ol>
+        <span>
+            <li appHighlight value="pink" *ngFor='let course of getData'>
+                {{course.courseCode}} <b>||</b> {{course.courseName}}<b>||</b> {{course.instructor}}
+
+            </li>
+        </span>
+    </ol>
+</div>

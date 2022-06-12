@@ -1,0 +1,21 @@
+<p appHighlight value="red">Customer Form</p>
+
+<form ngForm>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" required [(ngModel)]="model.username" name="username">
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text" class="form-control" id="password" [(ngModel)]="model.password" name="password">
+    </div>
+
+    <div class="form-group">
+        <label for="role">Role</label>
+        <input type="text" class="form-control" id="role" [(ngModel)]="model.role" name="role">
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)=" validateUser()">Submit</button>
+</form>
+
